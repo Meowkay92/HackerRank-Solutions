@@ -22,9 +22,9 @@ def average(array):
     
     # your code goes here
     solution = set(arr)
-    return sum(solution) / len(solution)]
+    return sum(solution) / len(solution)
 
-3
+
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))
