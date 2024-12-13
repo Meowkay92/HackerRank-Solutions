@@ -32,3 +32,18 @@ average = total_marks / n
 
 # Exibe a média com duas casas decimais
 print(f'{average:.2f}')
+
+
+
+# Solução < 4 linhas
+from collections import namedtuple
+
+# Lê o número de estudantes 'n' e os campos do 'namedtuple' fornecidos na entrada
+n, fields = int(input()), input()
+
+
+# Cria o namedtuple 'Student' com os campos fornecidos na entrada
+# Calcula a média das notas de 'MARKS' para todos os estudantes
+# Para cada estudante, a entrada é lida, convertida em 'Student', a nota é extraída e somada.
+# A média é calculada dividindo a soma das notas pelo número de estudantes e formatada com 2 casas decimais
+Student = namedtuple('Student', fields); print(f'{sum(int(Student(*input().split()).MARKS) for _ in range(n)) / n:.2f}')
