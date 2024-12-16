@@ -22,7 +22,7 @@ Student = namedtuple('Student', fields)
 total_marks = 0
 
 # Laço que lê os dados de cada estudante
-for _ in range(n):
+for i in range(n):
     student_data = input().split()
     student = Student(*student_data)
     total_marks += int(student.MARKS)
@@ -35,7 +35,8 @@ print(f'{average:.2f}')
 
 
 
-# Solução < 4 linhas
+# Solução < 4 linha
+# funcional, porem nao recomendado devido legibilidade do codigo
 from collections import namedtuple
 
 # Lê o número de estudantes 'n' e os campos do 'namedtuple' fornecidos na entrada
