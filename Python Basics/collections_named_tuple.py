@@ -46,4 +46,4 @@ n, fields = int(input()), input()
 # Calcula a média das notas de 'MARKS' para todos os estudantes
 # Para cada estudante, a entrada é lida, convertida em 'Student', a nota é extraída e somada.
 # A média é calculada dividindo a soma das notas pelo número de estudantes e formatada com 2 casas decimais
-Student = namedtuple('Student', fields); print(f'{sum(int(Student(*input().split()).MARKS) for _ in range(n)) / n:.2f}')
+Student = namedtuple('Student', fields); print(f'{sum(int(Student(*input().split()).MARKS) for i in range(n)) / n:.2f}')
